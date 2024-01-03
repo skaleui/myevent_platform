@@ -99,7 +99,7 @@ export async function POST(req: Request) {
 
     const deletedUser = await deleteUser(id!)
 
-    return NextResponse.json({ message: 'OK', user: deletedUser })
+    return NextResponse.json({ message: 'skale OK', user: deletedUser })
   }
  
   return new Response( eventType, { statusText: "All OK", status: 200 })
